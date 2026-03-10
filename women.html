@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women Dresses</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>👗 Women Dresses</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3755760/pexels-photo-3755760.jpeg" width="200">
+
+<div class="info">
+
+<h2>Floral Summer Dress</h2>
+
+<p>Beautiful floral dress perfect for summer outings.</p>
+
+<h3>₹799</h3>
+
+<button onclick="addToCart('Floral Summer Dress')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/7202901/pexels-photo-7202901.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear Gown</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1299</h3>
+
+<button onclick="addToCart('Party Wear Gown')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1771383/pexels-photo-1771383.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear Gown</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1399</h3>
+
+<button onclick="addToCart('Party Wear Gown')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/7202773/pexels-photo-7202773.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear Gown</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1319</h3>
+
+<button onclick="addToCart('Party Wear Gown')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/7871150/pexels-photo-7871150.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear Gown</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1999</h3>
+
+<button onclick="addToCart('Party Wear Gown')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/2562497/pexels-photo-2562497.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear Gown</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1500</h3>
+
+<button onclick="addToCart('Party Wear Gown')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Party Wear Gown')">buy now </button>
+
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+</body>
+</html>

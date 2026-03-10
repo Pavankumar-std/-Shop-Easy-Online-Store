@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Men shirts</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Men shirts</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1682699/pexels-photo-1682699.jpeg" width="200">
+
+<div class="info">
+
+<h2> RR shirts</h2>
+
+<p>Beautiful floral shirt perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart(' RR shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3735633/pexels-photo-3735633.jpeg" width="200">
+
+<div class="info">
+<h2> RR Shirts</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>21,299</h3>
+
+<button onclick="addToCart('AR shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/9558723/pexels-photo-9558723.jpeg" width="200">
+
+<div class="info">
+<h2>NN shirts </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹22,300</h3>
+
+<button onclick="addToCart('NN shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/9186152/pexels-photo-9186152.jpeg" width="200">
+
+<div class="info">
+<h2>  DD shirts</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('NN shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/16887216/pexels-photo-16887216.png" width="200">
+
+<div class="info">
+<h2>SS shirts </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,000</h3>
+
+<button onclick="addToCart('SS shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3919865/pexels-photo-3919865.jpeg" width="200">
+
+<div class="info">
+<h2>KKK shirts </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,,000</h3>
+
+<button onclick="addToCart('KKK shirts ')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Product is added to cart')">buy now </button>
+
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+</body>
+</html>

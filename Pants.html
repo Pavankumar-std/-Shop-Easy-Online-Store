@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pants Fpr Men</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Pants Fpr Men<</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/2897533/pexels-photo-2897533.jpeg" width="200">
+
+<div class="info">
+
+<h2>RR Pants</h2>
+
+<p>Beautiful floral pant perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart(' RR Pants')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/5872071/pexels-photo-5872071.jpeg" width="200">
+
+<div class="info">
+<h2> TT Pabts</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>1,299</h3>
+
+<button onclick="addToCart('TT Pants')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/9464625/pexels-photo-9464625.jpeg" width="200">
+
+<div class="info">
+<h2>GG Pants </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,390</h3>
+
+<button onclick="addToCart('GG Pants')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/30229903/pexels-photo-30229903.jpeg" width="200">
+
+<div class="info">
+<h2>  XX Pants</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('XX Pants')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/5872070/pexels-photo-5872070.jpeg" width="200">
+
+<div class="info">
+<h2>SS pants </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,000</h3>
+
+<button onclick="addToCart('SS Pants')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/7821326/pexels-photo-7821326.jpeg" width="200">
+
+<div class="info">
+<h2>XYZ Pants </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,000</h3>
+
+<button onclick="addToCart('XYZ Pants ')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('product added to cart')">buy now </button>
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>men Dresses</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>👗 men shoes</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg" width="200">
+
+<div class="info">
+
+<h2>Floral Summer shoes</h2>
+
+<p>Beautiful floral  perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart('Floral Summer shoes')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg" width="200">
+
+<div class="info">
+<h2>Party Wear  shoes</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1299</h3>
+
+<button onclick="addToCart('Party Wear  shoes')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/40662/shoes-footwear-hiking-shoes-walking-40662.jpeg" width="200">
+
+<div class="info">
+<h2>sport  Wear </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1300</h3>
+
+<button onclick="addToCart('sport  Wear')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg" width="200">
+
+<div class="info">
+<h2>daylly Wear </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1000</h3>
+
+<button onclick="addToCart('daylly Wear')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/797637/pexels-photo-797637.jpeg" width="200">
+
+<div class="info">
+<h2>daylly Wear </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2000</h3>
+
+<button onclick="addToCart('daylly Wea')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1261005/pexels-photo-1261005.jpeg" width="200">
+
+<div class="info">
+<h2>formal Wear </h2>
+<p>Elegant  perfect for   formal were.</p>
+<h3>₹1500</h3>
+
+<button onclick="addToCart('daylly Wea')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Product is added to cart')">buy now </button>
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+
+</body>
+</html>

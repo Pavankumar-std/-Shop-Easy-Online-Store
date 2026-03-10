@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laptops</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Laptops</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/2047914/pexels-photo-2047914.jpeg" width="200">
+
+<div class="info">
+
+<h2>PP laptop</h2>
+
+<p>Beautiful for work.</p>
+
+<h3>₹99,999</h3>
+
+<button onclick="addToCart('PP laptop')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/257897/pexels-photo-257897.jpeg" width="200">
+
+<div class="info">
+<h2>AR laptops</h2>
+<p>Elegant perfect for work.</p>
+<h3>₹1,21,299</h3>
+
+<button onclick="addToCart('AR laptop')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/270694/pexels-photo-270694.jpeg" width="200">
+
+<div class="info">
+<h2>NN laptop </h2>
+<p>Elegant  perfect for work.</p>
+<h3>₹1,22,300</h3>
+
+<button onclick="addToCart('NN laptop')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/18104/pexels-photo.jpg" width="200">
+
+<div class="info">
+<h2>  DD laptop</h2>
+<p>Elegant  perfect for work.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('daylly Wear')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg" width="200">
+
+<div class="info">
+<h2>SS laptop </h2>
+<p>Elegant  perfect for work.</p>
+<h3>₹2,44,000</h3>
+
+<button onclick="addToCart('SS laptop')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg" width="200">
+
+<div class="info">
+<h2>KKK latop </h2>
+<p>Elegant perfect for work</p>
+<h3>₹1,50,000</h3>
+
+<button onclick="addToCart('daylly Wea')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Product is added to cart')">buy now </button>
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+
+</body>
+</html>

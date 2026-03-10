@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Bags</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Travel Bags</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg" width="200">
+
+<div class="info">
+
+<h2> RR Bags</h2>
+
+<p>Beautiful floral Bag perfect for summer outings.</p>
+
+<h3>₹9,999</h3>
+
+<button onclick="addToCart(' RR Bag')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/160483/hiker-traveler-trip-travel-160483.jpeg" width="200">
+
+<div class="info">
+<h2> RR Bags</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,21,299</h3>
+
+<button onclick="addToCart('AR laptop')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg" width="200">
+
+<div class="info">
+<h2>NN BAg </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,22,300</h3>
+
+<button onclick="addToCart('NN BAg')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/9186152/pexels-photo-9186152.jpeg" width="200">
+
+<div class="info">
+<h2>  DD Bag</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('NN Bag')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/9391902/pexels-photo-9391902.jpeg" width="200">
+
+<div class="info">
+<h2>SS Bag </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,44,000</h3>
+
+<button onclick="addToCart('SS Bag')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1986996/pexels-photo-1986996.jpeg" width="200">
+
+<div class="info">
+<h2>KKK Bag </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,50,000</h3>
+
+<button onclick="addToCart('Bag')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Product is added to cart')">buy now </button>
+
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+</body>
+</html>

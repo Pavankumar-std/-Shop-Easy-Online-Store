@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  Sandal</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>  Sandal</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/6046186/pexels-photo-6046186.jpeg" width="200">
+
+<div class="info">
+
+<h2>RR Sandal</h2>
+
+<p>Beautiful floral dress perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart(' RR Sandal')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/6046184/pexels-photo-6046184.jpeg" width="200">
+
+<div class="info">
+<h2> TT sandal</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>1,299</h3>
+
+<button onclick="addToCart('TT Sandal')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/26861956/pexels-photo-26861956.jpeg" width="200">
+
+<div class="info">
+<h2>GG Sandal </h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹2,390</h3>
+
+<button onclick="addToCart('GG Sandal')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/31450985/pexels-photo-31450985.jpeg" width="200">
+
+<div class="info">
+<h2>  XX Sandal</h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('JXX Sandal')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/14825375/pexels-photo-14825375.jpeg" width="200">
+
+<div class="info">
+<h2>SS Sandal </h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹2,000</h3>
+
+<button onclick="addToCart('SS Sabdal')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/32851157/pexels-photo-32851157.jpeg" width="200">
+
+<div class="info">
+<h2>XYZ Sandal </h2>
+<p>Elegant gown perfect for special occasions.</p>
+<h3>₹1,000</h3>
+
+<button onclick="addToCart('XYZ Sandal ')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Party Wear Gown')">buy now </button>
+
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+</body>
+</html>

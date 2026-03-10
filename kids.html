@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KIds were</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>KIds were<</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3771682/pexels-photo-3771682.jpeg" width="200">
+
+<div class="info">
+
+<h2> kids shirts</h2>
+
+<p>Beautiful floral shirt perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart(' kids shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1068209/pexels-photo-1068209.jpeg" width="200">
+
+<div class="info">
+<h2> kids Shirts</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>21,299</h3>
+
+<button onclick="addToCart('kids shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/969373/pexels-photo-969373.jpeg" width="200">
+
+<div class="info">
+<h2>kids shirts </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹22,300</h3>
+
+<button onclick="addToCart('kids shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/8421895/pexels-photo-8421895.jpeg" width="200">
+
+<div class="info">
+<h2>  kids shirts</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('kidsshirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/4715320/pexels-photo-4715320.jpeg" width="200">
+
+<div class="info">
+<h2>kids shirts </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,000</h3>
+
+<button onclick="addToCart('kkids shirts')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1620769/pexels-photo-1620769.jpeg" width="200">
+
+<div class="info">
+<h2>kids shirts </h2>
+<p>Elegant perfect for special occasions.</p>
+<h3>₹1,000</h3>
+
+<button onclick="addToCart('kids shirts ')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('productis  added to cart')">buy now </button>
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+
+</body>
+</html>

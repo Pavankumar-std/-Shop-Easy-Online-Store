@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Watchs</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Watchs<</h1>
+</header>
+
+
+
+<div class="product">
+
+<img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" width="200">
+
+<div class="info">
+
+<h2> King watch</h2>
+
+<p>Beautiful floral Watch perfect for summer outings.</p>
+
+<h3>₹999</h3>
+
+<button onclick="addToCart(' King WAtchs')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/262484/pexels-photo-262484.jpeg" width="200">
+
+<div class="info">
+<h2> Tech Watch</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>1,299</h3>
+
+<button onclick="addToCart('Tech Wtch')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg" width="200">
+
+<div class="info">
+<h2>Go Watch </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,300</h3>
+
+<button onclick="addToCart('GoWatch')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/1137061/pexels-photo-1137061.jpeg" width="200">
+
+<div class="info">
+<h2>  Jam Watch</h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹10,0000</h3>
+
+<button onclick="addToCart('Jam Watch')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg" width="200">
+
+<div class="info">
+<h2>Air Watch </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹2,000</h3>
+
+<button onclick="addToCart('Air Watch')">Add to Cart</button>
+
+</div>
+
+</div>
+<div class="product">
+
+<img src="https://images.pexels.com/photos/47856/rolex-wrist-watch-clock-gmt-47856.jpeg" width="200">
+
+<div class="info">
+<h2>Top Watch </h2>
+<p>Elegant  perfect for special occasions.</p>
+<h3>₹1,000</h3>
+
+<button onclick="addToCart('kids shirts ')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartList"></ul>
+
+
+<script>
+
+function addToCart(productName){
+
+let cart = document.getElementById("cartList");
+
+let item = document.createElement("li");
+
+item.textContent = productName + " added to cart";
+
+cart.appendChild(item);
+
+alert(productName + " added to cart!");
+
+}
+ 
+
+</script>
+
+<button onclick="addToCart('Product added to cart')">buy now </button>
+<footer>
+<p>This is a student project created for learning purposes. 
+Product names and images are used only for demonstration.</p>
+</footer>
+
+</body>
+</html>
